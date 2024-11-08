@@ -1,0 +1,92 @@
+/* Navbar styling */
+.sensor-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123462;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+  }
+  
+  .sensor-navbar-left,
+  .sensor-navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .sensor-left-logo,
+  .sensor-right-logo {
+    height: 40px;
+    width: auto;
+  }
+  
+  .sensor-navbar-title h1 {
+    font-size: 24px;
+    text-align: center;
+  }
+  
+  /* Hamburger button styling */
+  .sensor-hamburger-btn {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  /* Sidebar styling */
+  .sensor-sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #333;
+    color: white;
+    transition: left 0.3s ease-in-out;
+    z-index: 9999;
+  }
+  
+  .sensor-sidebar.open {
+    left: 0;
+  }
+  
+  .sensor-sidebar-list {
+    list-style: none;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .sensor-sidebar-list li {
+    margin: 20px 0;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  .sensor-sidebar-list li i {
+    margin-right: 10px;
+  }
+  
+  /* Content area */
+  .sensor-content {
+    margin-left: 270px;
+  }
+  
+  .sensor-content h2 {
+    font-size: 20px;
+    color: #123462;
+  }
+  
+  .sensor-chart-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .sensor-chart {
+    flex: 1;
+    margin: 20px;
+  }
+  

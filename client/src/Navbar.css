@@ -1,0 +1,136 @@
+/* Navbar styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #123462;
+    padding: 10px;
+    color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed; /* Make the navbar fixed */
+    top: 0; /* Position it at the top */
+    left: 0; /* Ensure it spans the entire width */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it is on top of other elements */
+  }
+  
+  .hamburger-btn{
+    padding: 5px 10px;
+    border: none;
+    cursor:pointer;
+    border-radius: 8px;
+    background: linear-gradient(145deg, #f0f0f0, #cacaca);
+    background: linear-gradient(145deg,  #7593ff, #4a4df9);
+  
+    box-shadow:  2px 2px 5px #7593ff,-5px -5px 5px #4a4df9;
+  }
+  .hamburger-btn:hover{
+    border-radius: 8px;
+    background: linear-gradient(145deg, #cacaca, #f0f0f0);
+    background: linear-gradient(145deg,  #7593ff, #4a4df9);
+  
+    box-shadow:  5px 5px 11px #7593ff,-5px -5px 11px #4a4df9;
+  }
+  .hamburger-btn:active{
+    background: #123462;
+    box-shadow: inset 5px 5px 11px #7593ff,inset -5px -5px 11px #4a4df9;
+  }
+  
+  
+  .navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+  }
+  
+  .navbar-title h1 {
+    font-size: 24px;
+    color: #fff;
+    font-style: oblique;
+  }
+  
+  .logo {
+    height: 70px;
+    margin-left: 10px;
+  }
+  .logos {
+    height: 70px;
+    margin-right: 10px;
+  
+  }
+  
+  /* Sidebar styling */
+  .sidebar {
+    position: fixed;
+    top: 93px; /* Adjust based on the navbar height */
+    left: -250px;
+    width: 150px;
+    height: calc(100% - 60px); /* Subtract navbar height */
+    background-color: #FFFFFF;
+    transition: left 0.3s ease-in-out; /* Smooth slide-in/out */
+    color: white;
+    z-index: 999; /* Make sure the sidebar appears below the navbar */
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    overflow: hidden; /* Prevents scrolling */
+  }
+  
+  .sidebar.open {
+    left: 0;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin to avoid extra space */
+  }
+  
+  .sidebar ul li {
+    padding: 16px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+  }
+  
+  .sidebar ul li:hover {
+    background-color: #0743e5;
+  }
+  
+  /* Footer styling */
+  .footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+  }
+  
+  .footer-content {
+    margin: 0;
+  }
+  
+  .but {
+    list-style-type: none;
+    padding: 0;
+    margin: 0; /* Remove margin to avoid extra space */
+    color:#333;
+    font-size: 10px;
+  }
+  
+  .but li {
+    padding: 16px;
+    text-align: left; /* Align text to the left */
+    cursor: pointer;
+    transition: background-color 0.3s; /* Smooth hover effect */
+    display: flex; /* Use flex to align items */
+    align-items: center; /* Center items vertically */
+  }
+  
+  .but li i {
+    margin-right: 10px; /* Space between icon and text */
+  }
+  
+  .but li:hover {
+    background-color: #575757; /* Hover effect */
+  }
+  
